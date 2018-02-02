@@ -6,7 +6,8 @@ public class HelloWorld {
 
     public static void main(String[] args) { 
         
-        Biblio.lireFichier("src/helloworld/biblio.txt");        
+        Biblio.lireFichier("src/helloworld/biblio.txt"); 
+        //voici une ligne pour le projet cloner
           try { 
                 BufferedReader br = new BufferedReader(new FileReader("src/helloworld/biblio.txt"));
                 String line = br.readLine();                
