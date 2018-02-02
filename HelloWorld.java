@@ -6,8 +6,7 @@ public class HelloWorld {
 
     public static void main(String[] args) { 
         
-        Biblio.lireFichier("src/helloworld/biblio.txt");
-        /*
+        Biblio.lireFichier("src/helloworld/biblio.txt");        
           try { 
                 BufferedReader br = new BufferedReader(new FileReader("src/helloworld/biblio.txt"));
                 String line = br.readLine();                
@@ -19,6 +18,6 @@ public class HelloWorld {
             } catch (Exception ex ) {
                 System.out.println("Problème d'ouverture du fichier" + "biblio.txt" );
             } 
-         */ 
+          
     }
 }
