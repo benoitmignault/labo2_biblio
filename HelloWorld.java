@@ -78,11 +78,22 @@ public class HelloWorld {
     }
     
     public static int choixmenu(){
-        int choix;
+        int choix = 0;
         Scanner clavier = new Scanner(System.in);
         do{
             System.out.println("Entrer votre l'opération mathématique demandée !");
-            choix = clavier.nextInt();
+            boolean test_nombre = false;
+            while(!test_nombre){
+                try{
+                   choix = clavier.nextInt();
+                   clavier.nextLine();
+                   test_nombre = true;
+                } catch (InputMismatchException e){                   
+                   System.out.println("Entrer une valeur numérique SVP !");
+                   clavier.nextLine();   
+                }
+            }
+            
         } while ((choix < 0 || (choix > 4)));
         return choix;
     }
